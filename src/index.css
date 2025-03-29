@@ -1,0 +1,43 @@
+:root {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: rgb(212, 209, 209);
+  color: #333;
+  scroll-behavior: smooth;
+  /* overflow: hidden; */
+  
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+
+
+@media (prefers-color-scheme: light) {
+  
+}
+
+@media (prefers-color-scheme: dark) {
+  
+}

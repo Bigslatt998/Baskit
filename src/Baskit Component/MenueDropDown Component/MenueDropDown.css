@@ -1,0 +1,45 @@
+.MenueDropDown{
+    display: none;
+}
+
+.AccountDropDown{
+    display: none;
+}
+.MenueDropDown li{
+    list-style: none;
+    padding: 10px;
+}
+.AccountDropDown div{
+    width: 100%; height: 20px;
+    border-bottom: 1px solid rgb(211, 208, 208);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: blue;
+    cursor: pointer;
+    font-size: .9rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.AccountDropDown div:hover{
+    color: black;
+}
+.MenueDropDown li:nth-child(3):hover .AccountDropDown{
+    display: block;
+
+}
+.MenueDropDown li a span{
+    font-size: .7rem;
+}
+
+
+
+@media (max-width: 900px) {
+    .AActive{
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 20px 40px 0px 20px;
+        /* display: none; */
+        background-color: rgb(230, 230, 230);
+    }
+}

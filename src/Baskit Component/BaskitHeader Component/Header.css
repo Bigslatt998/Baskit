@@ -1,0 +1,110 @@
+.Header{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+.Header header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px 10px 20px;
+    text-transform: uppercase;
+    font-size: .9rem;
+}
+.Header header ul{
+    display: inline-flex;
+}
+.Header header li{
+    padding: 20px;
+    list-style: none;
+}
+.Header header li a:hover{
+    color: black;
+}
+.Header header li a span{
+    font-size: .7rem;
+}
+.Dropdown{
+    display: none;
+    box-shadow: 0px 2px 8px -5px rgba(0, 0, 0, 0.75);
+    background-color: white;
+    position: absolute;
+    margin-top: 20px;
+    z-index: 2;
+}
+.Header header li:nth-child(3):hover .Dropdown{
+    display: flex;
+    flex-direction: column;
+
+}
+.Dropdown div{
+    width: 200px; height: 70px;
+    border-bottom: 1px solid rgb(211, 208, 208);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: blue;
+    cursor: pointer;
+    font-size: .9rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Dropdown div:hover{
+    color: black;
+}
+
+.Other{
+    display: flex;
+    align-items: center;
+    color: blue;
+    gap: 20px;
+}
+.Other i {
+    cursor: pointer;
+}
+.Active{
+    color: black;
+}
+.Bar{
+    width: 50px; height: 50px;
+    border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.Cart{
+    position: relative;
+}
+.Cart span{
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    width: 15px; height: 15px;
+    border-radius: 25px;
+    background-color: blue;
+    padding: 2px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: .7rem;
+    font-weight: 600;
+}
+
+
+@media (max-width: 900px) {
+    .Bar{
+        display: flex;
+        margin-left: 30px;
+    }
+    .Header header li{
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+   
+}
+

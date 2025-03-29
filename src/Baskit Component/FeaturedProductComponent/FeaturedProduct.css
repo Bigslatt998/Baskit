@@ -1,0 +1,141 @@
+.FeaturedProduct{
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+}
+.FeaturedProduct h3{
+    font-size: clamp(20px, 5vw, 50px);
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+
+}
+.FeaturedProductContainer{
+    width: 90%;
+    height: 100%;
+    place-self: center;
+    align-items: center;
+    position: relative;
+    /* padding: 20px 0; */
+    row-gap: 50px;
+    column-gap: 10px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.Shoetrr{
+    position: relative;
+    overflow: hidden;
+    
+}
+.Shoetrr img{
+    width: 200px;
+    mix-blend-mode: multiply;
+}
+.PreviewXaddtocar{
+    position: absolute;
+    right: 20%;
+    top: 10px;
+    cursor: pointer;
+    transition: right .5s ease-in-out;
+
+}
+.PreviewXaddtocar i{
+    width: 40px; height: 40px;  
+    background-color: rgb(235, 232, 232);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ShoeName{
+    width: 80%;
+}
+
+@media (max-width: 600px) {
+    .FeaturedProductContainer{
+        width: 100%;
+        padding: 0px 0px 0px 30px;
+        place-self: center;
+        row-gap: 20px;
+        column-gap: 0px;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .Shoetrr img{
+        width: 120px;
+        mix-blend-mode: multiply;
+    }
+    .PreviewXaddtocar{
+        right: 35%;
+        top: 10px;
+        cursor: pointer;
+        transition: right 0.5s ease-in-out;
+    
+    }
+    .PreviewXaddtocar i{
+        width: 20px; height: 20px;
+        font-size: .7rem;
+    }
+    /* .Shoetrr:hover .PreviewXaddtocar{
+        right: 40px;
+    } */
+}
+
+/* .FeaturedProductContainer{
+    width: 100%;
+    height: 100%;
+    place-self: center;
+    align-items: center;
+    position: relative;
+    padding: 20px 0;
+}
+.ShoeCarousell{
+    width: 100%;
+    height: 100%;
+    place-self: center;
+    overflow: scroll;
+    scrollbar-width: none;
+    white-space: nowrap;
+    display: flex;
+    position: relative;
+}
+
+.Shoetrackk{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+}
+.Shoetrr{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    background-color: rgb(240, 230, 230);
+    position: relative;
+    overflow: hidden;
+}
+.Shoetrr img{
+    width: 300px;
+}
+.TTextt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 50px;
+}
+.ScrllBtn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: aliceblue;
+    color: black;
+    border: none;
+    padding: 10px;
+    z-index: 2;
+}
+.LeftIII{
+    left: 1%;
+}
+.RightIII{
+    right: 1%;
+} */
