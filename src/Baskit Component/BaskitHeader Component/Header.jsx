@@ -29,7 +29,7 @@ const Header = ({CartOpen, HandleCartOpen}) => {
   return (
     <div id='header' className='Header'>
         <header>
-            <div className="logo">
+            <div className="Loogo">
                 <img src={Baskitlogo}/>
             </div>
             <nav>

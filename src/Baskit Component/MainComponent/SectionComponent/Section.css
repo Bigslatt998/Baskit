@@ -29,11 +29,7 @@
     animation: scroll 10s linear infinite;
     transition: all .5s ease-in-out;
 }
-.logotrack::after{
-    content: '';
-    display: flex;
-    animation: scroll 10s linear infinite;
-}
+
 @keyframes scroll{
     0%{
         transform: translateX(0);
@@ -47,7 +43,7 @@
 .logo{
      width: 150px;
      height: auto;
-     margin-right: 25px;
+     margin-right: 110px;
 }
 section{
     width: 100%;

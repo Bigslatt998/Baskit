@@ -1,13 +1,14 @@
 import React from 'react'
 import './CartOpen.css'
-import { FaCartShopping, FaXmark } from 'react-icons/fa6'
+import { FaBicycle, FaCartShopping, FaXmark } from 'react-icons/fa6'
 import { useCart } from '../../../CartContext'
-import { FaShoppingBasket } from 'react-icons/fa'
+import { FaShoppingBasket, FaTrashAlt } from 'react-icons/fa'
 import { EmptyCartI, EmptyCartII } from '../../../List'
 const CartMenue = ({isCartMenue, HandleCartMenue, Content }) => {
-    const {cartItems, HandleRemove, HandleIncrease, HandleDecrease, subTotal,  totalprice, Shipping, SubTotalprice} = useCart()
+    const {cartItems, HandleRemove, HandleClearCart, HandleIncrease, HandleDecrease, subTotal,  totalprice, Shipping, SubTotalprice} = useCart()
     const Xmark = <FaXmark/>
     const Bag = <FaCartShopping/>
+    const Remove = <FaTrashAlt/>
   return (
     <div className={`${ 'CartOpen'} ${isCartMenue ? 'OpenCart' : null} `}>
         <div className="Cancle">
@@ -64,6 +65,10 @@ const CartMenue = ({isCartMenue, HandleCartMenue, Content }) => {
                         </tr>
                     </tbody>
                     ))}
+                    <div className="ClearCart">
+                        
+                        <span onClick={HandleClearCart}> Clear all {Remove}</span>
+                    </div>
                 </table>
 
                 <div className="Total">
@@ -79,10 +84,11 @@ const CartMenue = ({isCartMenue, HandleCartMenue, Content }) => {
                             <td>Shipping Fee: ${Shipping}</td>
                             <td>Total: ${totalprice}</td>
                         </tr>
-                        <button>Check Out</button>
                         </tbody>
                         
                     </table>
+                    <button>Check Out</button>
+
                 </div>
 
 

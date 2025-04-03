@@ -3,7 +3,7 @@ import './Preview.css'
 import { Shoeimages } from '../../../List'
 import { FaXmark } from 'react-icons/fa6'
 import { useCart } from '../../../CartContext'
-
+import Swal from 'sweetalert2'
 
 const Preview = ({HandlePreview, setisPreview, isPreview, selectProduct}) => {
     const Cancle = <FaXmark/>
@@ -22,7 +22,12 @@ const Preview = ({HandlePreview, setisPreview, isPreview, selectProduct}) => {
     }
     const Handleaddtocart = () => {
         if(!selectSize){
-            alert('ggg')
+            Swal.fire({
+                                title: 'Oops!',
+                                text: 'Please select a size',
+                                icon: 'warning',
+                                confirmButtonText: 'OK'
+                            })
             return;
         }
         // const cartItem = {
